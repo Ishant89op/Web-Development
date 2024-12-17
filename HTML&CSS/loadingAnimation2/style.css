@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Optional: to make it visible */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 1.5em;
+}
+
+.container .redS {
+    width: 35px;
+    height: 35px;
+    transform: rotate(45deg);
+    background-color: red;
+    animation: rotate45 2s infinite ease;
+}
+
+.container .yellowS {
+    width: 35px;
+    height: 35px;
+    transform: rotate(45deg);
+    background-color: yellow;
+    animation: rotate45 2s infinite ease;
+}
+
+.container .cyanS {
+    width: 35px;
+    height: 35px;
+    transform: rotate(45deg);
+    background-color: cyan;
+    animation: rotate45 2s infinite ease;
+}
+
+@keyframes rotate45 {
+    0% {transform: rotate(45deg);}
+    100% {transform: rotate(135deg);}
+}
