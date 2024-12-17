@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: darkgrey;
+    animation: animate 2s infinite;
+    animation: size 2s infinite;
+    border-radius: 100%;
+    transition: 
+}
+
+@keyframes animate {
+    from {background-color: darkgrey;}
+    to {background-color: lightgrey;}
+}
+
+@keyframes size {
+    50% {width: 34px; height: 34px;}
+}
