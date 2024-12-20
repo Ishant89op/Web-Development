@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    background-color: whitesmoke;
+}
+
+:root {
+    --pageHeight: 320px;
+    --pageWidth: 320px;
+}
+
+.flag {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--pageHeight);
+    width: var(--pageWidth);
+    background-color: lightcoral;
+}
+
+.flag .horizontal {
+    position: absolute;
+    height: calc(var(--pageHeight) * 3/16);
+    width: calc(var(--pageWidth) * 5/8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.flag .vertical {
+    position: absolute;
+    height: calc(var(--pageWidth) * 5/8);
+    width: calc(var(--pageHeight) * 3/16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}

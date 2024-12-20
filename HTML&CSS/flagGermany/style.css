@@ -1,0 +1,30 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flag {
+    display: flex;
+    flex-direction: column;  
+    height: 200px;
+    width: calc(200px * 5/3); 
+}
+
+.black {
+    flex-grow: 1;
+    background-color: black;
+}
+
+.red {
+    flex-grow: 1;
+    background-color: red;
+}
+
+.yellow {
+    flex-grow: 1;
+    background-color: rgb(255, 255, 0);
+}

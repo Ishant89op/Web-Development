@@ -1,0 +1,50 @@
+html, body {
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* .changing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 75px;
+    background-color: rgb(90, 90, 252);
+}
+
+#books, #sunlight, #animals, #anime, #nature {
+    color: white;
+}*/
+
+h1:after {
+    content: "";
+    width: 80px;
+    height: 90px;
+    background-color: rgb(125, 222, 255);
+    padding: 10px;
+    color: white;
+    margin-left: 4px;
+    border-radius: 20px;
+    animation: swap 4s infinite ease-in;
+}
+
+@keyframes swap {
+    0%  {content: "books";}
+    25% {content: "sunlight";}
+    50% {content: "animals";}
+    75% {content: "anime";}
+    100% {content: "nature";}
+}

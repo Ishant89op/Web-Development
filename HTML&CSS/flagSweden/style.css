@@ -1,0 +1,35 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.flag {
+    height: 200px;
+    width: calc(200px * 8/5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    position: relative;
+    box-shadow: 10px 10px 15px rgb(154, 153, 153);
+}
+
+.flag .horizontalRectangle {
+    height: calc(200px * 2/10);
+    width: calc(200px * 8/5);
+    background-color: rgb(255, 221, 0);
+    position: absolute;
+}
+
+.flag .verticalRectangle {
+    height: 200px;
+    width: calc(200px * 2/10);
+    background-color: rgb(255, 221, 0);
+    position: absolute;
+    margin-right: calc((calc(200px * 8/5)) * 2/10);
+}
